@@ -11,7 +11,7 @@ import warnings
 st.set_page_config(
 	layout="centered",  # Can be "centered" or "wide". In the future also "dashboard", etc.
 	initial_sidebar_state="collapsed",  # Can be "auto", "expanded", "collapsed"
-	page_title="Yield Prediciton",  # String or None. Strings get appended with "• Streamlit". 
+	page_title="Crop Prediciton",  # String or None. Strings get appended with "• Streamlit". 
 	page_icon="🌿",  # String, anything supported by st.image, or None.
 )
 
@@ -28,27 +28,16 @@ def main():
     # title
     html_temp = """
     <div>
+    <h2 style="color:MEDIUMSEAGREEN;text-align:left;">Team: 20_Code Predators</h2>
     <h1 style="color:MEDIUMSEAGREEN;text-align:left;"> Crop Recommendation  🌱 </h1>
     </div>
     """
     st.markdown(html_temp, unsafe_allow_html=True)
 
-    col1,col2  = st.beta_columns([2,2])
-    
-    with col1: 
-        with st.beta_expander(" ℹ️ Information", expanded=True):
-            st.write("""
-            Crop recommendation is one of the most important aspects of precision agriculture. Crop recommendations are based on a number of factors. Precision agriculture seeks to define these criteria on a site-by-site basis in order to address crop selection issues. While the "site-specific" methodology has improved performance, there is still a need to monitor the systems' outcomes.Precision agriculture systems aren't all created equal. 
-            However, in agriculture, it is critical that the recommendations made are correct and precise, as errors can result in significant material and capital loss.
-
-            """)
-        '''
-        ## How does it work ❓ 
-        Complete all the parameters and the machine learning model will predict the most suitable crops to grow in a particular farm based on various parameters
-        '''
+    col1,col2  = st.beta_columns([9.9,0.1])
 
 
-    with col2:
+    with col1:
         st.subheader(" Find out the most suitable crop to grow in your farm 👨‍🌾")
         N = st.number_input("Nitrogen", 1,10000)
         P = st.number_input("Phosporus", 1,10000)
@@ -71,7 +60,7 @@ def main():
             col1.success(f"{prediction.item().title()} are recommended by the A.I for your farm.")
       #code for html ☘️ 🌾 🌳 👨‍🌾  🍃
 
-    st.warning("Note: This A.I application is for educational/demo purposes only and cannot be relied upon. Check the source code [here](https://github.com/gabbygab1233/Crop-Recommendation)")
+    # st.warning("Note: This A.I application is for educational/demo purposes only and cannot be relied upon. Check the source code [here](https://github.com/gabbygab1233/Crop-Recommendation)")
     hide_menu_style = """
     <style>
     #MainMenu {visibility: hidden;}
