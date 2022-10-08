@@ -2,6 +2,8 @@
 
 ## Work Updates :
 
+### PPT Link: ![https://docs.google.com/presentation/d/1KxU9dkPCCIHPwoqqw_j9-pIPZ5mcDaBGgVrIaDl25Ag/edit?usp=sharing](https://docs.google.com/presentation/d/1KxU9dkPCCIHPwoqqw_j9-pIPZ5mcDaBGgVrIaDl25Ag/edit?usp=sharing)
+
 ### Yield Prediciton Model
 ![yield-prediciton-model Output - 1](https://res.cloudinary.com/devdemo/image/upload/v1665191504/VCET%20Hack/Screenshot_1071_vaqcig.png)
 
